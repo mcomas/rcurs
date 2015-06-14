@@ -15,6 +15,8 @@ L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la pla
   * organitzar les taules de treball per a treballar.
   * presentar la informació de la seva taula numèrica i gràficament utilitzant eines descriptives avançades.
 
+# A qui va dirigit el curs?
+
 # Guió del curs
 
   * R i Rstudio
