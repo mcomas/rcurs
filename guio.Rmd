@@ -29,7 +29,7 @@ L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la pla
   * Importació de fitxers
   
     * Principal estructures de dades d'R (`vector`, `list`, `array` i `data.frame`).
-    * Importació de la informació a R: desde Excel, SPSS, SAS, Stata, xml, json i html a R.
+    * Importació de la informació a R: des de Excel, SPSS, SAS, Stata, xml, json i html a R.
     * Organitza les teves dades (`tidyr`).
   
   * Analitza les teves dades
