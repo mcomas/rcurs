@@ -18,6 +18,8 @@ L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la pla
 # A qui va dirigit el curs?
 
 Gent interessada en analitzar dades amb RStudio
+
+
 # Guió del curs
 
   * R i Rstudio
