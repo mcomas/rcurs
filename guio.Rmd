@@ -1,5 +1,5 @@
 ---
-title: "Guió del curs"
+title: ""
 output: html_document
 ---
 
@@ -15,27 +15,27 @@ L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la pla
   * generar resultats de forma numèrica i gràfica utilitzant eines descriptives avançades i
   * presentar els seus resultats a través d'informes (pdf, html o word).
 
+
 # Requisits
 
 Coneixements d'estadística descriptiva bàsica.
 
+
 # Temari
 
-  * R i Rstudio
-
-    * Rstudio com a plataforma de treball amb R. Principals funcionalitats.
+  * Rstudio:
     * Estructura del programa. Configuració i personalització.
+    * Rstudio com a plataforma de treball amb R. Principals funcionalitats.
     * Treball amb projectes.
-    * Creació d'informes amb html, pdf i word. (`knitr`)
-  
-  * Importació de fitxers
-  
+    
+  * R i Importació de fitxers:
     * Principal estructures de dades d'R (`vector`, `list`, `array` i `data.frame`).
     * Importació de la informació a R: des de Excel, SPSS, SAS, Stata, xml, json i html a R.
+
+  * Treballa amb les teves dades:
     * Organitza les teves dades (`tidyr`).
-  
-  * Analitza les teves dades
-  
     * Descriu les teves dades (`dplyr`).
-    * Visualitza les teves dades (`ggplot`).
+    * Visualitza les teves dades (`ggplot`).    
+    * Presenta les teves dades : creació d'informes amb html, pdf i word (`knitr`).
+
 
