@@ -8,22 +8,21 @@ output: html_document
 L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la plataforma de treball Rstudio. L'alumne serà capaç de:
 
   * conèixer les funcionalitats del programa,
-  * estructurar els seus espais de treball, 
-  * presentar els seus resultats a través d'informes (pdf, html o word),
-  * importar dades de Excel, CSV, SAS, SPSS i Stata,
-  * coneixer eines d'importació d'informació online: html, xml o json,
-  * organitzar les taules de treball per a treballar i
-  * presentar la informació de la seva taula de forma numèrica i gràfica utilitzant eines descriptives avançades.
+  * estructurar els seus projectes en diferents espais de treball, 
+  * importar dades d'Excel, CSV, SAS, SPSS i Stata,
+  * introduir eines d'importació d'informació online: html, xml o json,
+  * organitzar les taules de treball per extreure informació,
+  * generar resultats de forma numèrica i gràfica utilitzant eines descriptives avançades i
+  * presentar els seus resultats a través d'informes (pdf, html o word).
 
-# A qui va dirigit el curs?
+# Requisits
 
-Gent interessada en analitzar dades amb RStudio
+Coneixements d'estadística descriptiva bàsica.
 
-
-# Guió del curs
+# Temari
 
   * R i Rstudio
-  
+
     * Rstudio com a plataforma de treball amb R. Principals funcionalitats.
     * Estructura del programa. Configuració i personalització.
     * Treball amb projectes.
