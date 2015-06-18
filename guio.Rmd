@@ -18,7 +18,7 @@ L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la pla
 
 # Requisits
 
-Coneixements d'estadística descriptiva bàsica.
+Coneixements d'estadística bàsica.
 
 
 # Temari
@@ -27,7 +27,7 @@ Coneixements d'estadística descriptiva bàsica.
     * Estructura del programa. Configuració i personalització.
     * Rstudio com a plataforma de treball amb R. Principals funcionalitats.
     * Treball amb projectes.
-    
+
   * R i Importació de fitxers:
     * Principal estructures de dades d'R (`vector`, `list`, `array` i `data.frame`).
     * Importació de la informació a R: des de Excel, SPSS, SAS, Stata, xml, json i html a R.
@@ -35,7 +35,7 @@ Coneixements d'estadística descriptiva bàsica.
   * Treballa amb les teves dades:
     * Organitza les teves dades (`tidyr`).
     * Descriu les teves dades (`dplyr`).
-    * Visualitza les teves dades (`ggplot`).    
+    * Visualitza les teves dades (`ggplot2`).    
     * Presenta les teves dades : creació d'informes amb html, pdf i word (`knitr`).
 
 
