@@ -3,7 +3,7 @@ title: "Introducció a R/Rstudio"
 output: html_document
 ---
 
-# Objectius
+# Objectiu
 
 L'objectiu del curs és introduir a l'alumne al llenguatge R a través de la plataforma de treball Rstudio. L'alumne serà capaç de:
 
@@ -29,13 +29,13 @@ Coneixements d'estadística bàsica.
     * Treball amb projectes.
 
   * R i Importació de fitxers:
-    * Principal estructures de dades d'R (`vector`, `list`, `array` i `data.frame`).
+    * Principals estructures de dades d'R (`vector`, `list`, `array` i `data.frame`).
     * Importació de la informació a R: des de Excel, SPSS, SAS, Stata, xml, json i html a R.
 
-  * Treballa amb les teves dades:
-    * Organitza les teves dades (`tidyr`).
-    * Descriu les teves dades (`dplyr`).
-    * Visualitza les teves dades (`ggplot2`).    
-    * Presenta les teves dades : creació d'informes amb html, pdf i word (`knitr`).
+  * Treballar amb les teves dades:
+    * Organitzar les teves dades (`tidyr`).
+    * Descriure les teves dades (`dplyr`).
+    * Visualitzar les teves dades (`ggplot2`).    
+    * Presentar les teves dades : creació d'informes amb html, pdf i word (`knitr`).
 
 
