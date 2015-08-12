@@ -1,0 +1,61 @@
+---
+title: "Conjunt de dades"
+author: "Marc Comas i Iván Galván"
+output: html_document
+---
+
+Es carreguen les dades i els paquets `dplyr` i `ggplot2`.
+
+```{r, message=F}
+library(dplyr)
+library(ggplot2)
+load('data/emex.RData')
+```
+
+Es seleccionen les columnes `com`, `mun`, `f321`, `f271`, `f328`, `f329` d'entre les disponibles a `emex.data`
+
+```{r}
+d <- emex.data %>% 
+  select(com, mun, f321, f271, f328, f329) %>% 
+  setNames(c('com', 'mun', 'pob', 'sup', 'lon', 'lat'))
+```
+
+
+Es representen les variables amb un gràfic
+
+```{r}
+l_theme = theme_bw() + theme(legend.position = 'none')
+
+p1<-ggplot() + 
+  geom_point(data = d, aes(x=lon, y=lat)) +
+  ggtitle('1. Localització') +
+  l_theme
+
+p2<-ggplot() + 
+  geom_point(data = d, aes(x=lon, y=lat, col=com)) +
+  ggtitle('2. Comarques') +
+  l_theme
+
+p3<-ggplot() + 
+  geom_point(data = d, aes(x=lon, y=lat, col=com, size=pob)) +
+  ggtitle('3. Població') +
+  l_theme
+
+p4<-ggplot() + 
+  geom_point(data = d, aes(x=lon, y=lat, col=com, size=sup)) +
+  ggtitle('4. Superfcie') +
+  l_theme
+
+p5<-ggplot() + 
+  geom_point(data = d, aes(x=lon, y=lat, col=com, size=pob/sup)) +
+  ggtitle('5. Densitat de població') +
+  l_theme
+```
+
+```{r, fig.width=4, fig.height=4, results='hold', echo=F}
+p1
+p2
+p3
+p4
+p5
+```
