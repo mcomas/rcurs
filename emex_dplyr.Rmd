@@ -1,0 +1,51 @@
+---
+title: "dplyr: Dades idescat"
+author: "Marc Comas i Iván Galván"
+output: html_document
+---
+
+Es carreguen les dades i els paquets `dplyr` i `ggplot2`.
+
+```{r, message=F}
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+options(width=100)
+load('data/emex.RData')
+```
+
+```{r}
+emex.data
+```
+
+```{r}
+emex.data %>% group_by(com) %>% tally(sort=T) %>% print(n=Inf)
+```
+
+```{r}
+emex.data %>% filter(com == 'Gironès') %>% select(mun) %>% print(n=Inf)
+```
+
+Es seleccionen les columnes `com`, `mun`, `f321`, `f271`, `f328`, `f329` d'entre les disponibles a `emex.data`
+
+```{r}
+v.homes = emex.desc %>% filter(t.code == 't31') %>% .[['f.code']]
+v.dones = emex.desc %>% filter(t.code == 't37') %>% .[['f.code']]
+
+vrs = c('com', 'mun', '0-14', '15-64', '65-84', '+85', 'total')
+d = bind_rows(
+  emex.data %>% select(com, mun, one_of(v.homes)) %>% setNames(vrs) %>% mutate(sex = 'homes'),
+  emex.data %>% select(com, mun, one_of(v.dones)) %>% setNames(vrs) %>% mutate(sex = 'dones') ) %>% 
+  gather(key=edat, value=count, -com, -mun, -sex, -total)
+```
+
+```{r}
+d %>% group_by(sex, edat) %>% summarise(
+  median = median(count) ) %>% spread(key=sex, value=median)
+```
+
+```{r}
+ggplot(data=d) + geom_histogram(aes(x=count)) + 
+  facet_grid(edat~sex) +
+  scale_x_log10()
+```
