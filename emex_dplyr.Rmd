@@ -10,20 +10,21 @@ Es carreguen les dades i els paquets `dplyr` i `ggplot2`.
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(DT)
 options(width=100)
 load('data/emex.RData')
 ```
 
 ```{r}
-emex.data
+emex.desc %>% datatable
 ```
 
 ```{r}
-emex.data %>% group_by(com) %>% tally(sort=T) %>% print(n=Inf)
+emex.data %>% group_by(com) %>% tally(sort=T) %>% datatable
 ```
 
 ```{r}
-emex.data %>% filter(com == 'Gironès') %>% select(mun) %>% print(n=Inf)
+emex.data %>% filter(com == 'Gironès') %>% select(mun) %>% datatable
 ```
 
 Es seleccionen les columnes `com`, `mun`, `f321`, `f271`, `f328`, `f329` d'entre les disponibles a `emex.data`
