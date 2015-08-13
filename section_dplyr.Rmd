@@ -1,0 +1,48 @@
+---
+title: '`dplyr`: Una gramàtica per la manipulació de dades'
+author: "Marc Comas i Iván Galván"
+output: 
+  html_document: 
+    toc: yes
+---
+
+
+```{r}
+library(dplyr)
+load('data/emex.RData')
+d <- emex.data %>% 
+  select(com, mun, f321, f271) %>% 
+  setNames(c('com', 'mun', 'pob', 'sup'))
+```
+
+
+# L'operador `%>%`
+
+El paquet d'`dplyr` incorpora per defecte l'operador `%>%` del paquet `magrittr`. Aquest operador permetrà que el nostre codi sigui més fàcil de llegir. Primer perqué ordenad les operacions d'esquerra a dreta. A mode d'exemple, suposem que volem veure les primer 3 primeres linies del conjunt de dades `d`:
+
+```{r}
+head(d, 3)
+```
+
+l'operador `%>%` ens permet girar la forma que escrivim aquesta crida a la funció `head` girant de la següent manera:
+
+```{r}
+d %>% head(3)
+```
+
+Si volem que l'objecte que apareix a l'esquerra de l'operador `%>%` no sigui utilitzat en primera posició, necessitarem especificar a quin lloc volem incorporar l'objecte de l'esquerra amb un punt ".". Per exemple,
+
+```{r}
+"Benvinguts al curs d'R" %>% gsub('R', 'dplyr', .)
+```
+
+Trobareu més funcionalitats de l'operador %>% a la seva ajuda. Per accedir-hi `?"%>%"`.
+
+# Principals funcions del paquet `dplyr`
+
+ * `filter()`
+ * `arrange()`
+ * `select()`
+ * `distinc()`
+ * `mutate()` ( i `transmute()`)
+ * `summarise()`
