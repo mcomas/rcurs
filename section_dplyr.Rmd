@@ -7,7 +7,9 @@ output:
 ---
 
 
-```{r}
+```{r, message=F}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+options(dplyr.print_min = 4L, dplyr.print_max = 4L)
 library(dplyr)
 load('data/emex.RData')
 d <- emex.data %>% 
@@ -40,9 +42,109 @@ Trobareu més funcionalitats de l'operador %>% a la seva ajuda. Per accedir-hi `
 
 # Principals funcions del paquet `dplyr`
 
- * `filter()`
- * `arrange()`
- * `select()`
- * `distinc()`
- * `mutate()` ( i `transmute()`)
- * `summarise()`
+## `filter()`: filtrar el conjunt de dades
+
+La funció `filter` ens permet filtrar el conjunt de dades actiu. Totes les observacions que _no_ compleixin l'expressió seràn descartades.
+
+Municipis de la comarca del Gironès:
+
+```{r}
+d %>% filter(com == 'Gironès')
+```
+
+Municipis del Gironès amb més de 10.000 habitants:
+
+```{r}
+d %>% filter(com == 'Gironès' & pob > 10000)
+```
+
+La funció `filter` és equivalent a la funció `subset` del paquet base d'R, podeu utilitzar la que us sigui més fàcil de recordar.
+
+
+## `arrange()`: ordenar les observacions segons una variable
+
+La funció `arrange` ens permet ordenador les observacions respecte una o més variables.
+
+Municipis ordenadats segons població:
+
+```{r}
+d %>% arrange(pob)
+```
+
+Podem ordenar de forma decreixent amb el signe `-` davant de la variable:
+
+```{r}
+d %>% arrange(-pob)
+```
+
+També podem ordenador a partir de dues variables. 
+
+Conjunt ordenat per comarques (de forma alfabètica) i per població (decreixent)
+
+```{r}
+d %>% arrange(com,-pob)
+```
+
+## `select()`: seleccionar variables
+
+La funció `select` ens permet seleccionar variables del conjunt de dades
+
+```{r}
+emex.data %>% select(mun, com)
+```
+
+La funció `select` disposa d'algunes funcions especials que ens permten seleccionar variables d'una forma més abreviada. Les podeu consultar a l'ajuda de la funció `select` (`?select`).
+
+Alguns exemple són.
+
+```{r}
+emex.data %>% select(starts_with('f30'))
+```
+
+La selecció que hem fet és:
+
+```{r}
+emex.desc %>% filter(substr(emex.desc$f.code, 1, 3) == 'f30')
+```
+
+## `mutate()`: crear noves variables
+
+`mutate` és una funció molt útil que ens permetrà crear noves variables a partir de les existents. Per exemple, podem crear un nova variable que contingui la densitat de població (aprofitem per ordenar la sortida).
+
+```{r}
+d %>% mutate(dens = pob/sup) %>%
+  arrange(-dens)
+```
+
+## `summarise()`: resumir el conjunt de dades
+
+La funció `summarise` és important per generar descriptives d'interés pel conjunt de dades que estiguem treballant. Amb combinació amb la funció `group_by` es converteixen en les eines més potents del paquet `dplyr`.
+
+```{r}
+d %>% 
+  summarise(
+    mun.n = length(mun),
+    sup.mean = mean(sup),
+    pob.mean = mean(pob) )
+```
+
+## `group_by()`: agrupar en categories (`ungroup()`)
+
+La funció `group_by`ens permet aplicar una funció segons categories donades per la categoria d'agrupament. Per exemple, podem descriure el nombre de municipis, superfície mitjana de municipis i població mitjana de municipis _segons la comarca_. Amb `dplyr` és molt senzil, la sintàxis és la mateixa que la utilitzada en l'apartat anterior (aprofitem per ordenar els resultats).
+
+```{r}
+d %>%
+  group_by(com) %>%
+  summarise(
+    mun.n = length(mun),
+    sup.mean = mean(sup),
+    pob.mean = mean(pob) ) %>% arrange(-pob.mean)
+```
+
+Un cop tenim conjunt de dades agrupat, totes les funcions que apliquem al conjunt s'aplicaran per grups. Per exemple, si ordenem per població un conjunt agrupat per comarques s'ordenen els municipis dins de cada categoria.
+
+```{r}
+d %>% group_by(com) %>%
+  arrange(-pob)
+```
+
