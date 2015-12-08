@@ -4,11 +4,27 @@ author: "Ivan Galvan and Marc Comas"
 output: html_document
 ---
 
+### General
+
+  * [R-bloggers](http://www.r-bloggers.com/): Diferents blogs relacionats amb R.
+
 ### Llibres
 
- * [Library Genesis](http://gen.lib.rus.ec/)
- * [Leanpub](https://leanpub.com/)
+ * [Library Genesis](http://gen.lib.rus.ec/): Repositori de llibres cientifics.
+ * [Leanpub](https://leanpub.com/): Repositori a diferents llibres. Molts d'ells gratuïts.
  
 ### Tutorials d'R
 
-  * [Introducció R ](http://www-eio.upc.es/teaching/best/R/TutorialR.pdf) per Klaus Langohr
+  * [Introducció R ](http://www-eio.upc.es/teaching/best/R/TutorialR.pdf) per Klaus Langohr. Curs introductori d'R (castellà)
+
+### `ggplot2`
+
+  * [Cookbook R](http://www.cookbook-r.com/Graphs/). Consulta ràpida a funcionalitata de `ggplot2`.
+  
+### Cheatsheets
+
+  * [Rmarkdown](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+  * [dplyr i tidyr](http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+  * [ggplot2](http://www.rstudio.com/wp-content/uploads/2015/12/ggplot2-cheatsheet.pdf)
+  
+  

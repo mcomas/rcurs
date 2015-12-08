@@ -1,0 +1,15 @@
+---
+title: "Template"
+author: "Marc Comas i Iván Galván"
+output: 
+  html_document: 
+    toc: yes
+---
+
+
+```{r, message=F, include=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "##   ", warning=FALSE)
+options(dplyr.print_min = 4L, dplyr.print_max = 4L)
+```
+
+

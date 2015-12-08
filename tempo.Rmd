@@ -1,14 +1,13 @@
 ---
 title: "Temporalització"
-author: "Ivan Galvan and Marconius"
-date: "Tuesday, December 08, 2015"
+author: "Marc Comas and Iván Galván"
 output: html_document
 ---
 
 
 Curs de 15hores, separat en tres setmanes de la següent forma,
 
-### 1r dia: Dilluns/dimarts (3h):
+### 1r dia: Dilluns/dimarts (3h) [Marc]:
 
  * Presentació de nosaltres, presentar el curs/objectius bla bla bla (30min)
  * Rstudio com a plataforma de treball amb R. (30 min)
@@ -19,26 +18,43 @@ Curs de 15hores, separat en tres setmanes de la següent forma,
 Descans (15 min)
 
  * Introducció a R (1h30min):
-    * Estructures d'R
+    * Estructures d'R: vectors, matrius, llistes (data.frames) i funcions
     * Gràfics
     * Paquets
     
-### 2n dia: Dilluns/dimarts (3h):
+### 2n dia: Dimecres/Dijous (3h) [Handy Candy]:
 
-  * Importació de dades a R (1h 10min)
+  * Importació de dades a R (1h 30min)
     * Text/CSV
     * Excel
     * SPSS, Stata
     * html
-  *
+
+Descans (15 min)
+
+  * Estadística descritiva amb R (1h 30min)
+    * Descriptiva numèrica i gràfica. (`summary`, `table`, `plot`, `boxplot`, `hist`)
+    * Iteració a R (`apply`, `lapply`, `sapply`, `tapply`)
+    
   
-### 3r dia: Dimecres/Dijous (3h):
+### 3r dia: Dilluns/dimarts (3h) [Marc]:
 
-### 4t dia: Dilluns/dimarts (3h):
+  * `dplyr` (1h)
+  * `tidyr` (30min)
+  
+Descans (15 min)
+  
+  * Activitats `dplyr` i `tidyr` (1h 30min)
+  
+### 4t dia: Dimecres/Dijous (3h) [Handy Candy again]:
 
-### 5è dia: Dimecres/Dijous (3h):
+  * `ggplot2` (1h 30min)
+  
+Descans (15 min)
+  
+  * Activitats `ggplot2` (1h 30min)
+  
+### 5è dia: Dilluns/dimarts (3h) [Both]:
 
-- La primera setmana es faria una classe el dilluns o dimarts de 3h.
-En aquesta classe es donaria feina als alumnes per a preparar les dues
-setmanes següents, que és on aprendràn la part més important del curs.
-- Les dues següents setmanes serien de dos dies cadascuna de 3h+3h.
+  * LLiure
+  

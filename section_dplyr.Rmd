@@ -1,15 +1,20 @@
 ---
 title: '`dplyr`: Una gramàtica per la manipulació de dades'
 author: "Marc Comas i Iván Galván"
-output: 
-  html_document: 
+output:
+  html_document:
+    toc: yes
+  pdf_document:
     toc: yes
 ---
 
 
-```{r, message=F}
-knitr::opts_chunk$set(collapse = T, comment = "#>")
+```{r, message=F, include=FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "##   ", warning=FALSE)
 options(dplyr.print_min = 4L, dplyr.print_max = 4L)
+```
+
+```{r}
 library(dplyr)
 load('data/emex.RData')
 d <- emex.data %>% 
