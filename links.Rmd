@@ -8,3 +8,7 @@ output: html_document
 
  * [Library Genesis](http://gen.lib.rus.ec/)
  * [Leanpub](https://leanpub.com/)
+ 
+### Tutorials d'R
+
+  * [Introducció R ](http://www-eio.upc.es/teaching/best/R/TutorialR.pdf) per Klaus Langohr
