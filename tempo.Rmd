@@ -1,0 +1,44 @@
+---
+title: "Temporalització"
+author: "Ivan Galvan and Marconius"
+date: "Tuesday, December 08, 2015"
+output: html_document
+---
+
+
+Curs de 15hores, separat en tres setmanes de la següent forma,
+
+### 1r dia: Dilluns/dimarts (3h):
+
+ * Presentació de nosaltres, presentar el curs/objectius bla bla bla (30min)
+ * Rstudio com a plataforma de treball amb R. (30 min)
+ * Principals funcionalitats:
+    * Treballar amb projectes (15 min)
+    * `Rmarkdown` i `knitr` (15 min)
+
+Descans (15 min)
+
+ * Introducció a R (1h30min):
+    * Estructures d'R
+    * Gràfics
+    * Paquets
+    
+### 2n dia: Dilluns/dimarts (3h):
+
+  * Importació de dades a R (1h 10min)
+    * Text/CSV
+    * Excel
+    * SPSS, Stata
+    * html
+  *
+  
+### 3r dia: Dimecres/Dijous (3h):
+
+### 4t dia: Dilluns/dimarts (3h):
+
+### 5è dia: Dimecres/Dijous (3h):
+
+- La primera setmana es faria una classe el dilluns o dimarts de 3h.
+En aquesta classe es donaria feina als alumnes per a preparar les dues
+setmanes següents, que és on aprendràn la part més important del curs.
+- Les dues següents setmanes serien de dos dies cadascuna de 3h+3h.

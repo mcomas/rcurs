@@ -1,0 +1,10 @@
+---
+title: "Enllaços d'interés"
+author: "Ivan Galvan and Marc Comas"
+output: html_document
+---
+
+### Llibres
+
+ * [Library Genesis](http://gen.lib.rus.ec/)
+ * [Leanpub](https://leanpub.com/)
