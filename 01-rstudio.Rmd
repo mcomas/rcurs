@@ -1,0 +1,40 @@
+---
+title: "Introduction to the course"
+author: "Marc Comas and Iván Galván"
+date: "20 Dec 2015"
+output: ioslides_presentation
+---
+
+# About us
+
+## Contact information
+
+  * Marc Comas (marc.comas@udg.edu)
+  * Iván Galván (ivan.galvan@udg.edu)
+
+# About R/Rstudio
+
+## R programming language
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" height="50px" />
+
+  * Implementation of S programming language
+  * Publicly available in 1992
+  * Created by Ross Ihaka and Robert Gentleman at the University of Auckland
+  * R is open source and freely available at [http://cran.r-project.org](http://cran.r-project.org/) under the GNU General Public License (GPL)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/93/GPLv3_Logo.svg" width="200px" />
+
+## Rstudio 
+
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/RStudio_logo.png/1920px-RStudio_logo.png" height="50px" />
+
+  * Integrated development environment (IDE) for R
+  * Publicly available in February 2011
+  * Two versions: Desktop and Server
+  * Rstudio is open source and freely available at [http://www.rstudio.com](http://www.rstudio.com) for Microsoft Windows, Mac OS X and Linux under the GNU Affero General Public License (Affero GPL)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" width="200px" />
+
+
+

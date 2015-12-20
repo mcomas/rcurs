@@ -32,7 +32,7 @@ Descans (15 min)
 
 Descans (15 min)
 
-  * Estadística descritiva amb R (1h 30min)
+  * Estadística descriptiva amb R (1h 30min)
     * Descriptiva numèrica i gràfica. (`summary`, `table`, `plot`, `boxplot`, `hist`)
     * Iteració a R (`apply`, `lapply`, `sapply`, `tapply`)
     

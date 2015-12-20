@@ -1,0 +1,15 @@
+---
+title: "R/Rstudio course"
+author: "Marc Comas and Iván Galván"
+date: "20 Dec 2015"
+output: html_document
+---
+
+### Course slides
+
+  * [Presentació](01-rstudio.html)
+  * [Introducció a R](02-R_intro.html)
+
+### Other material
+
+  * [Links of interest](links.html)

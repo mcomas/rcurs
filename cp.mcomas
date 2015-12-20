@@ -1,0 +1,6 @@
+#/bin/bash
+
+TODAY=`date +%Y%m%d`
+url=rcurs2016
+
+rsync -avzL --delete www/ -e ssh puntdtro@mcomas.net:~/public_html/$url/
