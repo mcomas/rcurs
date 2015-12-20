@@ -7,9 +7,9 @@ output: html_document
 
 ### Course slides
 
-  * [Presentació](01-rstudio.html)
+  * [Presentació del curs](01-rstudio.html)
   * [Introducció a R](02-R_intro.html)
 
 ### Other material
 
-  * [Links of interest](links.html)
+  * [Enllaços d'interés](links.html)

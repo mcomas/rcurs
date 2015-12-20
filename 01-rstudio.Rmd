@@ -1,27 +1,71 @@
 ---
-title: "Introduction to the course"
+title: "Presentació del curs"
 author: "Marc Comas and Iván Galván"
 date: "20 Dec 2015"
 output: ioslides_presentation
 ---
 
-# About us
+# Sobre nosaltres
 
-## Contact information
+## Informació de contacte
 
   * Marc Comas (marc.comas@udg.edu)
   * Iván Galván (ivan.galvan@udg.edu)
 
-# About R/Rstudio
+# Sobre aquest curs
 
-## R programming language
+##  1r dia
+
+  * Presentació de l'entorn de treball Rstudio
+    * Treballar amb projectes
+    * Generació d'informes `Rmarkdown` i `knitr`
+  * Introducció a R
+    * Principals estructures d'R
+    * Funcions
+    * Gràfics
+    * Paquets
+
+## 2n dia
+
+  * Importació de dades a R
+    * Text/CSV
+    * Excel
+    * SPSS, Stata
+    * html
+  * Estadística descriptiva amb R
+    * Descriptiva numèrica i gràfica (`summary`, `table`, `plot`, `boxplot`, `hist`)
+    * Iteració a R (`apply`, `lapply`, `sapply`, `tapply`)
+
+
+## 3r dia
+
+  * `dplyr`: A Grammar of Data Manipulation
+    * L'operador `%>%` (pipe)
+    * Principals funcions: `select`, `filter`, `mutate`, `group_by`, `summarise`
+  * `tidyr`: Easily Tidy Data with 'spread()' and 'gather()' Functions
+    * Netejant un conjunt de dades
+    * Les funcions `gather` i `spread`
+
+## 4t dia
+
+  * `ggplot2`: An Implementation of the Grammar of Graphics
+    * Mapings estetètics
+    * Funcions wrapping
+
+## 5è dia
+
+  * Lliure
+
+# Sobre R/Rstudio
+
+## El llenguatge de programació R
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg" height="50px" />
 
-  * Implementation of S programming language
-  * Publicly available in 1992
-  * Created by Ross Ihaka and Robert Gentleman at the University of Auckland
-  * R is open source and freely available at [http://cran.r-project.org](http://cran.r-project.org/) under the GNU General Public License (GPL)
+  * Implementació del llenguatge de programació S
+  * Disponible publicament el 1992
+  * Creat per Ross Ihaka i Robert Gentleman de la Universitat d'Auckland
+  * R és codi lliure i disponible de forma gratuïta a [http://cran.r-project.org](http://cran.r-project.org/) sota la llicència _GNU General Public License_ (GPL)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/GPLv3_Logo.svg" width="200px" />
 
@@ -29,10 +73,10 @@ output: ioslides_presentation
 
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/RStudio_logo.png/1920px-RStudio_logo.png" height="50px" />
 
-  * Integrated development environment (IDE) for R
-  * Publicly available in February 2011
-  * Two versions: Desktop and Server
-  * Rstudio is open source and freely available at [http://www.rstudio.com](http://www.rstudio.com) for Microsoft Windows, Mac OS X and Linux under the GNU Affero General Public License (Affero GPL)
+  * Entorn Integrat de Desenvolupament (IDE) per R
+  * Disponible publicament al 2011
+  * Dues versions: Desktop and Server
+  * Rstudio és codi lliure i disponible gratuïtament a [http://www.rstudio.com](http://www.rstudio.com) per Microsoft Windows, Mac OS X i Linux sota la llicència GNU Affero General Public License (Affero GPL)
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" width="200px" />
 
