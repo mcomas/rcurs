@@ -1,8 +1,8 @@
 ---
 title: "Introducció a R"
 author: "Marc Comas and Iván Galván"
-output: 
-  ioslides_presentation: 
+output:
+  ioslides_presentation:
     smaller: yes
 ---
 
@@ -12,13 +12,39 @@ output:
 
 R pot ser utilitzat com una calculadora
 
-```{r, results='hold'}
-4+4                 # operacioins aritmètiques comunes...
-132 %% 7            # ...i menys comunes: 132 mòdul 7
-factorial(10)       # funcions internespredefinides
-exp(2) > 2^exp(1)   # operacions lògiques...
-exp(pi*1i)          # ... i també operacions complexes
+```{r, collapse=TRUE}
+4+4                           # operacions aritmètiques comunes...
+132 %% 7                      # ...i menys comunes: 132 mòdul 7
+factorial(10)                 # funcions internes predefinides
+!FALSE & exp(2) > 2^exp(1)    # operacions lògiques...
+exp(pi*1i)                    # ... i també operacions complexes
 ```
+
+## Scripts d'R
+
+  * Arxius de text amb l'extensió __.R__
+  * Conjunt de comandes que s'executaran de forma seqüencial
+  * El símbol `#` serveix per afegir comentaris als scripts
+
+```{r, results='hold'}
+4+4
+# Això és un comentari
+exp(1)
+```
+
+## R markdown
+
+  * Arxius de text amb l'extensió __.Rmd__
+  * Document `markdown` amb suport a R
+
+![markdown](figs/markdownOverview.png)
+
+## R markdown
+
+  * Arxius de text amb l'extensió __.Rmd__
+  * Document `markdown` amb suport a R
+
+![markdown](figs/markdownChunk.png)
 
 ## Principals objectes d'R
 
@@ -40,4 +66,19 @@ function(parameters, ...){
   return(resultat)
 }
 ```
+
+## Assignació d'objectes (variable)
+
+L'assignació amb R es pot realitzar de diferents maneres
+
+```{r, collapse=TRUE}
+a <- 1
+a
+2 -> a
+a
+a = 3
+a
+```
+
+L'operador d'assignació més ampliament utilitzat és `<-`
 

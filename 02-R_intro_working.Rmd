@@ -1,0 +1,11 @@
+---
+title: "Estructures de dades"
+author: "Marc Comas i Iván Galván"
+output: html_document
+---
+
+# Estructures de dades
+
+```{r}
+
+```

@@ -1,0 +1,56 @@
+---
+title: "Creating objects"
+author: "Marc Comas i Iván Galván"
+date: "January 9, 2016"
+output: html_document
+---
+
+```{r}
+knitr::opts_chunk$set(collapse = T)
+```
+
+# Inicialització de vectors
+
+La forma més senzilla d'inicialitzar un vector númeric és utilitzant l'operador `:`. Es seqüencia que va d'un en un des del número que es posa a l'esquerra de l'operador sense pasar del número que hi ha a la dreta
+
+```{r}
+1:5
+5:1
+pi:6 # real
+6:pi # integer
+```
+
+Una generalització de l'operador `:` és la funció `seq`
+
+```{r}
+seq(10)
+seq(1,10)
+seq(1,10,2)
+seq(1,1000, length.out = 4)
+```
+
+Amb R tenim moltes funcions per treballar amb valors aleatoris
+
+```{r}
+sample(1:5)                          # es reordena de forma aleatoria el vector
+sample(1:5, 2)                       # S'agafen dos elements del vector 1:5 sense reemplaçament
+sample(1:5, 10, replace = TRUE)      # ... i amb reemplaçament
+```
+
+Si volem generar valors aleatoris a partir de distribucions contínues
+
+```{r}
+runif(20, min = 1, max = 10)
+rnorm(20, mean = 5, sd = 2)
+rexp(20, rate = 0.5)
+rt(20, df = 5)
+```
+
+o discretes
+
+```{r}
+rbinom(20, size = 10, prob = 0.5)
+rpois(20, lambda = 2)
+```
+
+Hi han moltes distribucions diferents [enllaç](https://cran.r-project.org/web/views/Distributions.html)
