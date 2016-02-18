@@ -15,7 +15,9 @@ output: html_document
  
 ### Tutorials d'R
 
-  * [Introducció R ](http://www-eio.upc.es/teaching/best/R/TutorialR.pdf) per Klaus Langohr. Curs introductori d'R (castellà)
+  * [Introducció R ](http://www-eio.upc.es/teaching/best/R/TutorialR.pdf) per Klaus Langohr. Curs introductori d'R (castellà).
+  * [Advanced R](http://adv-r.had.co.nz/) per Hadley Wickham. Continguts avançats d'R.
+  * [R packages](http://r-pkgs.had.co.nz/) per Hadley Wickham. Creació de paquets amb R.
 
 ### `ggplot2`
 
